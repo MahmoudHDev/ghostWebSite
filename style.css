@@ -32,6 +32,7 @@ nav {
     -webkit-backdrop-filter: blur(10.6px);
     border: 1px solid rgba(255, 255, 255, 0.11);
     display: flex;
+
     justify-content: space-between;
     align-items: center;
     margin-left: 10%;
@@ -39,7 +40,7 @@ nav {
     padding-right: 3%;
     padding-left: 3%;
     border-radius: 80px;
-    height: 12vh;
+    height: 7.5vh;
 
 }
 
@@ -47,11 +48,11 @@ nav {
     display: flex;
     gap: 10px;
     font-size: 1.5rem;
-    width: 10%;
+    width: 20%;
 }
 
 .center-nav {
-    width: 100%;
+    width: 40%;
 }
 
 
@@ -74,7 +75,7 @@ nav {
 
 .center-nav ul {
     padding-left: 0px;
-
+    margin: 0;
 }
 
 .dropdown:hover .dropdown-items {
@@ -120,7 +121,6 @@ nav {
 }
 
 .right-nav {
-    height: 5vh;
     /* width: 15%; */
     background: rgb(65, 13, 66);
     background: linear-gradient(90deg, rgba(177, 58, 180, 1) 0%, rgba(69, 162, 252, 1) 100%);
@@ -132,17 +132,22 @@ nav {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
-    height: auto;
+    height: 4vh;
+    width: 20%;
+
 }
 
 .right-nav:hover {
     cursor: pointer;
+
 }
 
 .page {
-    height: 100vh;
+    max-height: 100vh;
     padding-left: 10%;
     padding-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -335,12 +340,14 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .third-page>h1 {
     text-align: center;
     font-size: 3vw;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .cards-carousal {
@@ -410,8 +417,9 @@ nav {
     padding: 0px;
     padding-right: 10%;
     padding-left: 10%;
-    height: 100vh;
-    margin-top: 10%;
+    height: 60vh;
+    min-height: 60vh;
+    margin-top: 30px;
 }
 
 .forth-page h1 {
@@ -439,12 +447,15 @@ nav {
     align-items: center;
     padding: 20px;
     transition: transform 0.3s ease;
+
 }
 
 
 .swiper-card {
     width: 40%;
-    height: 100%;
+    min-width: 30%;
+    min-height: 50%;
+    height: auto;
     background-color: #111;
     display: flex;
     flex-direction: column;
@@ -455,12 +466,13 @@ nav {
     transition: border 0.3s ease;
     position: relative;
     z-index: 1;
+    padding: 20px;
 }
 
 .info {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+
 }
 
 .courses-token {
@@ -510,7 +522,7 @@ nav {
 
 .fifth-page img {
     border-radius: 60px;
-    height: 70%;
+    height: 70vh;
     width: auto;
     position: relative;
 }
@@ -524,12 +536,12 @@ nav {
 }
 
 .paragraphs-cont h1 {
-    font-size: 3.5rem;
+    font-size: 3.5vw;
     text-align: center;
 }
 
 .paragraphs-cont p {
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     color: rgb(156, 156, 156);
 
 }
@@ -539,11 +551,10 @@ nav {
     width: 30%;
     border: 1px solid rgb(138, 138, 138);
     color: white;
-    font-size: 1.24rem;
+    font-size: 1.3vw;
     border-radius: 30px;
     background-color: transparent;
     margin-top: 7%;
-
 }
 
 
@@ -554,33 +565,33 @@ nav {
 }
 
 .sixth-page>h1 {
-    font-size: 3.5rem;
+    font-size: 3vw;
     text-align: center;
-
+    display: block;
 }
-
 
 
 .partner-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     row-gap: 20px;
-
 }
 
 .grid-item {
-    height: 150px;
+    height: auto;
     border: 1px solid rgba(128, 128, 128, 0.329);
     display: flex;
     justify-content: center;
     gap: 15px;
     align-items: center;
-    font-size: 3rem;
+    font-size: max(2.5vw, 12px);
     color: rgba(214, 214, 214, 0.726);
     position: relative;
     z-index: 1;
     background-color: black;
+    padding: 20px;
 }
 
 .grid-item::before {
@@ -604,7 +615,8 @@ nav {
 /* Footer */
 
 footer {
-    height: 50vh;
+    height: auto;
+    min-height: 60vh;
     background-color: rgb(22, 22, 22);
     padding-left: 10%;
     padding-right: 10%;
@@ -641,7 +653,7 @@ footer {
 .ul-footer li {
     padding-bottom: 20px;
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     color: rgb(199, 199, 199);
 }
 
