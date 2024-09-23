@@ -39,7 +39,7 @@ nav {
     padding-right: 3%;
     padding-left: 3%;
     border-radius: 80px;
-    height: 7vh;
+    height: 12vh;
 
 }
 
@@ -121,8 +121,8 @@ nav {
 
 .right-nav {
     height: 5vh;
-    width: 15%;
-    background: rgb(177, 58, 180);
+    /* width: 15%; */
+    background: rgb(65, 13, 66);
     background: linear-gradient(90deg, rgba(177, 58, 180, 1) 0%, rgba(69, 162, 252, 1) 100%);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 30px;
@@ -132,6 +132,7 @@ nav {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
+    height: auto;
 }
 
 .right-nav:hover {
@@ -201,6 +202,7 @@ nav {
     padding-right: 10%;
     padding-left: 10%;
     align-items: center;
+    margin-bottom: 10vh;
 }
 
 .sec-page ul {
@@ -212,10 +214,11 @@ nav {
     gap: 5%;
     padding-left: 0px;
     font-size: 1.3rem;
+    margin: 0;
 }
 
 .sec-page h1 {
-    font-size: 3.5rem;
+    font-size: 3.5vw;
     text-align: center;
 }
 
@@ -327,16 +330,17 @@ nav {
 
 /* Third page */
 .third-page {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .third-page>h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3vw;
 }
 
 .cards-carousal {
@@ -406,7 +410,8 @@ nav {
     padding: 0px;
     padding-right: 10%;
     padding-left: 10%;
-    height: 60vh;
+    height: 100vh;
+    margin-top: 10%;
 }
 
 .forth-page h1 {
